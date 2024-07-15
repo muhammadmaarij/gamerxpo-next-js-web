@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Sure, here's a sample README file for the GitHub repository:
 
-## Getting Started
+---
 
-First, run the development server:
+# GamerXpo Web Application
+
+This project implements the frontend of the GamerXpo application using Next.js. The application allows users to browse game events, manage their profiles, and interact with the platform. The frontend communicates with the GamerXpo backend server to fetch and display data.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+
+## Introduction
+
+GamerXpo Web Application is designed to provide a seamless and interactive platform for users to explore and participate in gaming events. The application is built using Next.js for server-side rendering and React for building user interfaces.
+
+## Features
+
+- User registration and authentication
+- Browse and search for game events
+- View event details
+- User profile management
+- Responsive design for optimal viewing on different devices
+
+## Installation
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/muhammadmaarij/gamerxpo-next-js-web.git
+cd gamerxpo-next-js-web
+```
+
+2. **Install dependencies:**
+
+```bash
+npm install
+```
+
+3. **Set up environment variables:**
+
+Create a `.env.local` file in the root directory and add your environment variables:
+
+```
+NEXT_PUBLIC_API_URL=your_backend_api_url
+```
+
+4. **Run the application:**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will start on `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Open your web browser and navigate to `http://localhost:3000`.
+2. Sign up or log in to your account.
+3. Browse through the list of game events.
+4. Click on an event to view its details.
+5. Manage your profile and view your participated events.
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+gamerxpo-next-js-web/
+│
+├── components/              # Reusable React components
+│   ├── EventCard.js         # Component to display an event card
+│   ├── Navbar.js            # Navigation bar component
+│   └── ...                  # Other components
+│
+├── pages/                   # Next.js pages
+│   ├── api/                 # API routes (if any)
+│   ├── events/              # Event-related pages
+│   ├── profile.js           # User profile page
+│   ├── index.js             # Home page
+│   └── ...                  # Other pages
+│
+├── public/                  # Public assets
+│   ├── images/              # Image assets
+│   └── ...                  # Other public assets
+│
+├── styles/                  # CSS and styling files
+│   ├── globals.css          # Global styles
+│   └── ...                  # Other style files
+│
+├── .env.local               # Environment variables
+├── package.json             # Project dependencies
+├── README.md                # Project README file
+└── ...                      # Other project files
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to modify this README file as per your specific project requirements and details.
